@@ -1,0 +1,67 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: url(/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    margin: 120px auto;
+}
+.left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+}
+
+.middle img{
+    width: 70%;
+}
+
+.middle img:nth-child(2){
+    width: 30%;
+    animation: rotate 10s linear infinite;
+}
+
+.middle img:nth-child(3){
+    width: 90%;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.right{
+    width: 100%;
+    height: 100%;
+}
