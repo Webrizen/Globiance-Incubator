@@ -1,8 +1,6 @@
 import React from "react";
 import "./styles/App.css";
-import bottomBase from "./assets/base.svg";
-import Atom from "./assets/atom.svg";
-import topBase from "./assets/top-base.png";
+import Incubator from './components/Incubator';
 
 function App() {
   return (
@@ -27,59 +25,7 @@ function App() {
             </div>
           </div>
           <div className="middle">
-            <div class="background">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <img src={Atom} alt="Atom" className="atom" />
+            <Incubator />
           </div>
           <div className="right">
           <h1 class="title-font sm:text-4xl text-3xl mb-2 font-bold text-gray-100">
