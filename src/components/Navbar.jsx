@@ -48,12 +48,12 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 right-0 py-4 z-10 bg-[rgba(225,225,225,0.2)] backdrop-blur-2xl">
+          <div className="md:hidden absolute top-20 left-0 right-0 py-4 z-10 bg-white text-gray-800 backdrop-blur-2xl">
             <div className="flex flex-col items-center text-center">
-              <a className="mb-3 hover:text-gray-200">Home</a>
-              <a className="mb-3 hover:text-gray-200">Forms</a>
-              <a className="mb-3 hover:text-gray-200">Disclaimer</a>
-              <a className="mb-3 hover:text-gray-200">Privacy Policy</a>
+              <a className="mb-3 hover:text-gray-500 text-gray-800">Home</a>
+              <a className="mb-3 hover:text-gray-500 text-gray-800">Forms</a>
+              <a className="mb-3 hover:text-gray-500 text-gray-800">Disclaimer</a>
+              <a className="mb-3 hover:text-gray-500 text-gray-800" text-gray-800>Privacy Policy</a>
               <div>
                 <button className="inline-flex items-center border-none bg-transparent py-2 px-8 hover:outline-none focus:outline-none hover:bg-white hover:text-gray-900 rounded text-base md:mr-4 mt-4 md:mt-0">
                   Sign In
