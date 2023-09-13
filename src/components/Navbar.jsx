@@ -68,10 +68,10 @@ export default function Navbar() {
 
         {/* Sign-in and Register buttons */}
         <div className="md:flex hidden">
-          <button className="inline-flex items-center border-none bg-transparent py-2 px-8 hover:outline-none focus:outline-none hover:bg-white hover:text-gray-900 rounded text-base md:mr-4 mt-4 md:mt-0">
+          <button className="inline-flex items-center border-none bg-transparent py-2 px-8 hover:outline-none focus:outline-none hover:bg-white hover:text-gray-900 rounded text-base text-white md:mr-4 mt-4 md:mt-0">
             Sign In
           </button>
-          <button className="inline-flex items-center border-2 border-gray-200 bg-transparent py-2 px-8 hover:outline-none focus:outline-none hover:bg-white hover:text-gray-900 rounded text-base mt-4 md:mt-0">
+          <button className="inline-flex items-center border-2 border-gray-200 bg-transparent py-2 px-8 hover:outline-none focus:outline-none hover:bg-white hover:text-gray-900 text-white rounded text-base mt-4 md:mt-0">
             Register
           </button>
         </div>
