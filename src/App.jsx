@@ -12,6 +12,14 @@ function App() {
     threshold: 0.2,
     triggerOnce: true,
   });
+  const [animateImages, setAnimateImages] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setAnimateImages(true);
+    }
+  }, [inView]);
+
   return (
     <>
       <section className="hero">
@@ -42,29 +50,29 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="services">
+      <section className="services overflow-hidden">
         <div className="title-services">
           <h1 className="font-bold">What Can We Do For You</h1>
         </div>
         <div className="services-grid" ref={ref}>
           <div className="left-services">
-          <motion.img
-              initial={{ opacity: 0, x: -100, y: -100 }}
-              animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
+            <motion.img
+              initial={{ opacity: 0, x: -1000, y: -1000 }}
+              animate={animateImages ? { opacity: 1, x: 0, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.4 }}
               src={Bulb}
               alt="Light Bulb"
             />
             <motion.img
-              initial={{ opacity: 0, y: -100 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
+              initial={{ opacity: 0, y: -1000 }}
+              animate={animateImages ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.4 }}
               src={Atom}
               alt="Atom"
             />
             <motion.img
-              initial={{ opacity: 0, x: 100, y: 100 }}
-              animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
+              initial={{ opacity: 0, x: 1000, y: 1000 }}
+              animate={animateImages ? { opacity: 1, x: 0, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.4 }}
               src={Grow}
               alt="Grow Your Business"

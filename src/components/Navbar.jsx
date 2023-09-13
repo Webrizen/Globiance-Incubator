@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <header className="body-font fixed top-0 left-0 right-0 mx-auto z-50">
       <div className="container mx-auto flex flex-wrap px-5 flex-row items-center bg-[rgba(225,225,225,0.3)] sm:py-8 py-5 backdrop-blur-2xl sm:my-4 rounded">
-        <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
+        <a href="/" className="flex title-font font-medium items-center text-gray-900 md:mb-0">
           <img src={Logo} alt="Globiance Incubator Logo" className="h-10" />
         </a>
 
