@@ -1,12 +1,11 @@
 import React from "react";
 import "./styles/App.css";
-import Incubator from './components/Incubator';
 
 function App() {
   return (
     <>
       <section className="hero">
-        <div className="container hero-grid">
+        <div className="hero-grid">
           <div className="left">
             <h1 class="title-font sm:text-4xl text-5xl mb-2 font-bold text-gray-100">
               Globiance Incubator
@@ -24,9 +23,8 @@ function App() {
                 </button>
             </div>
           </div>
-          <div className="middle">
-            <Incubator />
-          </div>
+          <div></div>
+          <div></div>
           <div className="right">
           <h1 class="title-font sm:text-4xl text-3xl mb-2 font-bold text-gray-100">
           Reimagine banking with Globiance. Find out more here.
